@@ -1,0 +1,5 @@
+disk_image = "reddit-base-1531217145"
+project = "resources-209116"
+region = "europe-west1"
+public_key_path = "~/.ssh/appuser.pub"
+private_key_path = "~/.ssh/appuser"
