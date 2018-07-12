@@ -1,7 +1,7 @@
 {
     "version": 3,
     "terraform_version": "0.11.7",
-    "serial": 62,
+    "serial": 52,
     "lineage": "3ecf42b7-b983-6a78-c54b-841b0c389de2",
     "modules": [
         {
@@ -39,7 +39,7 @@
                         "attributes": {
                             "address": "35.240.42.155",
                             "address_type": "EXTERNAL",
-                            "creation_timestamp": "2018-07-12T02:41:35.654-07:00",
+                            "creation_timestamp": "2018-07-12T02:10:29.645-07:00",
                             "description": "",
                             "id": "resources-209116/europe-west1/reddit-app-ip",
                             "name": "reddit-app-ip",
@@ -123,7 +123,7 @@
                             "deletion_protection": "false",
                             "guest_accelerator.#": "0",
                             "id": "reddit-app",
-                            "instance_id": "4849403273572682388",
+                            "instance_id": "7808858980031833598",
                             "label_fingerprint": "42WmSpB8rSM=",
                             "machine_type": "g1-small",
                             "metadata.%": "1",
@@ -241,7 +241,7 @@
                             "deletion_protection": "false",
                             "guest_accelerator.#": "0",
                             "id": "reddit-db",
-                            "instance_id": "341934821266328212",
+                            "instance_id": "8762819680884401641",
                             "label_fingerprint": "42WmSpB8rSM=",
                             "machine_type": "g1-small",
                             "metadata.%": "1",
@@ -252,8 +252,8 @@
                             "name": "reddit-db",
                             "network_interface.#": "1",
                             "network_interface.0.access_config.#": "1",
-                            "network_interface.0.access_config.0.assigned_nat_ip": "104.199.38.111",
-                            "network_interface.0.access_config.0.nat_ip": "104.199.38.111",
+                            "network_interface.0.access_config.0.assigned_nat_ip": "104.199.99.237",
+                            "network_interface.0.access_config.0.nat_ip": "104.199.99.237",
                             "network_interface.0.access_config.0.network_tier": "PREMIUM",
                             "network_interface.0.access_config.0.public_ptr_domain_name": "",
                             "network_interface.0.address": "10.132.0.2",

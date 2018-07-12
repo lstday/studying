@@ -19,6 +19,11 @@
             "script": "scripts/install_ruby.sh",
             "type": "shell"
         },
+	{
+            "type": "file",
+            "source": "files/puma.service",
+            "destination": "/tmp/puma.service"
+        },
         {
             "script": "scripts/deploy.sh",
             "type": "shell"
