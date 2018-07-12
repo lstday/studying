@@ -3,18 +3,15 @@
         {
             "disk_size": 10,
             "disk_type": "pd-standard",
-            "image_description": "ruby, puma, mongo, studying",
-            "image_name": "reddit-base-{{timestamp}}",
+            "image_description": "{{user `source_image_family`}}, Ruby and Puma",
+            "image_name": "{{user `image_name`}}",
             "machine_type": "{{user `machine_type`}}",
             "network": "default",
             "project_id": "{{user `project_id`}}",
-            "source_image": "{{user `source_image`}}",
+            "source_image_family": "{{user `source_image_family`}}",
             "ssh_username": "appuser",
-            "tags": [
-                "puma-server"
-            ],
             "type": "googlecompute",
-            "zone": "europe-west1-b"
+            "zone": "{{user `zone`}}"
         }
     ],
     "provisioners": [
@@ -23,14 +20,15 @@
             "type": "shell"
         },
         {
-            "execute_command": "sudo {{.Path}}",
-            "script": "scripts/install_mongodb.sh",
+            "script": "scripts/deploy.sh",
             "type": "shell"
         }
     ],
     "variables": {
+        "image_name": "reddit-app",
         "machine_type": "f1-micro",
-        "project_id": null,
-        "source_image": null
+        "project_id": "resources-209116",
+        "source_image_family": "ubuntu-1604-lts",
+        "zone": "europe-west1-b"
     }
 }
